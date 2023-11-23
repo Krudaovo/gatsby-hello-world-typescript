@@ -17,6 +17,7 @@ type MetaTypes = {
 }
 
 export default function Home() {
+
   return (
     <>
       <Layout>

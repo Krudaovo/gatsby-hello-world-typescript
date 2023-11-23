@@ -1,5 +1,9 @@
 import type { GatsbyConfig } from "gatsby";
 
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`
+})
+
 const config: GatsbyConfig = {
   siteMetadata: {
     charset: 'utf-8',
@@ -24,6 +28,7 @@ const config: GatsbyConfig = {
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
   plugins: [
+    `gatsby-plugin-pnpm`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
