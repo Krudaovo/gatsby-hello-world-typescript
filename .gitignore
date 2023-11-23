@@ -4,5 +4,3 @@ public
 src/gatsby-types.d.ts
 .nvmrc
 *.tgz
-
-.env.*
